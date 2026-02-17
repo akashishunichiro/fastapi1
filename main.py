@@ -53,7 +53,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "1️⃣ <b>Candidate name:</b>\n"
             "(Ism va familiyangizni yozing)\n\n"
             "2️⃣ <b>Exam date:</b>\n"
-            "(Imtixon sanasi, masalan: 25.06.2025)\n\n"
+            "(Imtixon sanasi)\n\n"
             "3️⃣ <b>City/Region:</b>\n"
             "(Shahar va tumaningiz)\n\n"
             "4️⃣ <b>Speaking Part 1.1:</b>\n"
@@ -72,9 +72,6 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Holatni o'zgartirish: shablon kutilmoqda
         user_states[chat_id] = 'waiting_template'
 
-        # Qo'shimcha: namuna uchun
-        example_text = "🔍 <b>Misol:</b>\n\nAlijon Valiyev\n25.06.2025\nToshkent, Yunusobod\nMen ertalab turaman...\nRasmda kitob va qalam bor...\nMen sevgan mashg'ulot...\nKelajak rejalarim..."
-        await query.message.reply_text(example_text, parse_mode='HTML')
 
 
 # Foydalanuvchi xabarlarini qabul qilish
