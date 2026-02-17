@@ -50,21 +50,21 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Shablonni yuborish
         template_text = (
             "📋 <b>Iltimos quyidagi ma'lumotlarni to'ldiring:</b>\n\n"
-            "1️⃣ <b>Candidate name:</b>\n"
+            " <b>Candidate name:</b>\n"
             "(Ism va familiyangizni yozing)\n\n"
-            "2️⃣ <b>Exam date:</b>\n"
+            "<b>Exam date:</b>\n"
             "(Imtixon sanasi)\n\n"
-            "3️⃣ <b>City/Region:</b>\n"
+            "<b>City/Region:</b>\n"
             "(Shahar va tumaningiz)\n\n"
-            "4️⃣ <b>Speaking Part 1.1:</b>\n"
+            "1. <b>Speaking Part 1.1:</b>\n"
             "(Savolga javob)\n\n"
-            "5️⃣ <b>Speaking Part 1.2:</b>\n"
+            "1.2 <b>Speaking Part 1.2:</b>\n"
             "(Rasmlarda nima borligini o'zbekcha yozing)\n\n"
-            "6️⃣ <b>Speaking Part 2:</b>\n"
+            "2. <b>Speaking Part 2:</b>\n"
             "(2-qism javobi)\n\n"
-            "7️⃣ <b>Speaking Part 3:</b>\n"
+            "3. <b>Speaking Part 3:</b>\n"
             "(3-qism javobi)\n\n"
-            "📝 <i>Javoblaringizni yuqoridagi ketma-ketlikda yuboring:</i>"
+            " <i>Javoblaringizni yuqoridagi ketma-ketlikda yuboring:</i>"
         )
 
         await query.message.reply_text(template_text, parse_mode='HTML')
@@ -128,8 +128,7 @@ async def process_template(update: Update, context: ContextTypes.DEFAULT_TYPE, m
 
     # Foydalanuvchiga tasdiq
     await update.message.reply_text(
-        "✅ Ma'lumotlaringiz qabul qilindi va adminga yuborildi.\n"
-        "Tez orada javob olasiz!"
+        "@multilevel_center kanaliga savolingiz yuboriladi. Savol ulashganingiz uchun raxmat🔥"
     )
 
     # Adminga xabar tayyorlash
